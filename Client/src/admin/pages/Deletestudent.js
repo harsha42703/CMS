@@ -16,7 +16,7 @@ const Deletestudent = () => {
   useEffect(() => {
     const fetchStudent = async () => {
       try {
-        const response = await axios.get(`http://localhost:3001/admin/singlestudent/${jntuno}`, {
+        const response = await axios.get(`https://cms-136u.onrender.com/admin/singlestudent/${jntuno}`, {
           headers: {
             'Authorization': `${admintoken}`
           }
@@ -34,7 +34,7 @@ const Deletestudent = () => {
 
   const deleteStudent = async () => {
     try {
-      const response = await axios.delete(`http://localhost:3001/admin/deletestudent`, {
+      const response = await axios.delete(`https://cms-136u.onrender.com/admin/deletestudent`, {
         headers: {
           'Authorization': `${admintoken}`
         },

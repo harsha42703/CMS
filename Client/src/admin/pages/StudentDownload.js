@@ -12,7 +12,7 @@ const StudentDownload = () => {
   const downloadExcel = async () => {
     setLoading(true);
     try {
-      const response = await axios.get('http://localhost:3001/admin/filterstudents/download', {
+      const response = await axios.get('https://cms-136u.onrender.com/admin/filterstudents/download', {
         params: { currentyear: currentYear, branch },
         headers: {
           'Authorization': `${admintoken}`

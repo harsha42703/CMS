@@ -27,7 +27,7 @@ const UpdateStudent = () => {
   useEffect(() => {
     const fetchStudent = async () => {
       try {
-        const response = await axios.get(`http://localhost:3001/admin/singlestudent/${jntuno}`,{
+        const response = await axios.get(`https://cms-136u.onrender.com/admin/singlestudent/${jntuno}`,{
           headers: {
             'Authorization': `${admintoken}`
           }
@@ -92,7 +92,7 @@ const UpdateStudent = () => {
     e.preventDefault();
     if (validate()) {
       try {
-        const response = await axios.put("http://localhost:3001/admin/updatestudent", {
+        const response = await axios.put("https://cms-136u.onrender.com/admin/updatestudent", {
           jntuno: student.jntuno,
           email: student.email,
           fname: student.firstname,

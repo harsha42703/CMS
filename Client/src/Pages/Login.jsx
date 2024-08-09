@@ -40,7 +40,7 @@ const Login = () => {
         "and password:",
         password
       );
-      const response = await axios.post("http://localhost:3001/student/login", {
+      const response = await axios.post("https://cms-136u.onrender.com/student/login", {
         email,
         password,
       });

@@ -16,7 +16,7 @@ const Singlestudent = () => {
   useEffect(() => {
     const fetchStudent = async () => {
       try {
-        const response = await axios.get(`http://localhost:3001/admin/singlestudent/${jntuno}`, {
+        const response = await axios.get(`https://cms-136u.onrender.com/admin/singlestudent/${jntuno}`, {
           headers: {
             'Authorization': `${admintoken}`
           }

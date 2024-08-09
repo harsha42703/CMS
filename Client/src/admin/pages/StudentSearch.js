@@ -32,7 +32,7 @@ const StudentSearch = () => {
   const fetchStudents = async () => {
     setLoading(true);
     try {
-      const response = await axios.get('http://localhost:3001/admin/filterstudents', {
+      const response = await axios.get('https://cms-136u.onrender.com/admin/filterstudents', {
         params: { currentyear: currentYear, branch },
         headers: {
           'Authorization': `${admintoken}`

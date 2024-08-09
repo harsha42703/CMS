@@ -37,7 +37,7 @@ const Addstudents = () => {
     formData.append('file', file);
     const admintoken = Cookies.get('admintoken');
     try {
-      const response = await axios.post('http://localhost:3001/admin/addstudents', formData, {
+      const response = await axios.post('https://cms-136u.onrender.com/admin/addstudents', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           'Authorization': `${admintoken}`

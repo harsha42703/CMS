@@ -18,7 +18,7 @@ function Viewstudentsdata() {
     setLoading(true);
     const admintoken = Cookies.get('admintoken');
     try {
-      const response = await axios.get('http://localhost:3001/admin/allstudents', {
+      const response = await axios.get('https://cms-136u.onrender.com/admin/allstudents', {
         headers: {
           'Authorization': `${admintoken}`
         }

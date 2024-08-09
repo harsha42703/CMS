@@ -44,7 +44,7 @@
 //     setLoading(true);
 
 //     try {
-//       const response = await axios.get(`http://localhost:3001/student/sendotp/${email}`);
+//       const response = await axios.get(`https://cms-136u.onrender.com/student/sendotp/${email}`);
 //       if (response.status === 200) {
 //         toast.success('Reset email sent. Please check your inbox');
 //         setReset(false);
@@ -71,7 +71,7 @@
 //     setLoadingVerify(true);
 
 //     try {
-//       const response = await axios.post('http://localhost:3001/student/verifyotp', { email, password, otp: otpString });
+//       const response = await axios.post('https://cms-136u.onrender.com/student/verifyotp', { email, password, otp: otpString });
 
 //       if (response.status === 200) {
 //         toast.success('Password changed successfully');
@@ -251,7 +251,7 @@ function Reset() {
     setLoading(true);
 
     try {
-      const response = await axios.get(`http://localhost:3001/student/sendotp/${email}`);
+      const response = await axios.get(`https://cms-136u.onrender.com/student/sendotp/${email}`);
       if (response.status === 200) {
         toast.success('Reset email sent. Please check your inbox');
         setReset(false);
@@ -278,7 +278,7 @@ function Reset() {
     setLoadingVerify(true);
 
     try {
-      const response = await axios.post('http://localhost:3001/student/verifyotp', { email, password, otp: otpString });
+      const response = await axios.post('https://cms-136u.onrender.com/student/verifyotp', { email, password, otp: otpString });
 
       if (response.status === 200) {
         toast.success('Password changed successfully');

@@ -15,7 +15,7 @@ const Welcomepage = () => {
   useEffect(() => {
     const fetchBranchwiseData = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/admin/allstudents/branchwise', {
+        const response = await axios.get('https://cms-136u.onrender.com/admin/allstudents/branchwise', {
           headers: {
             'Authorization': `${Cookies.get('admintoken')}`
           }

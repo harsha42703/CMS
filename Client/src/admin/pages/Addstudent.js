@@ -73,7 +73,7 @@ const Addstudent = () => {
       // Get the admin token from the cookies
       const admintoken = Cookies.get('admintoken');
       try {
-        const response = await axios.post("http://localhost:3001/admin/addstudent", {
+        const response = await axios.post("https://cms-136u.onrender.com/admin/addstudent", {
           jntuno: student.jntuno,
           email: student.email,
           fname: student.firstname,

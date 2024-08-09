@@ -28,7 +28,7 @@ const AdminLogin = () => {
 
     try {
       console.log('Submitting login with email:', mobile, 'and password:', password);
-      const response = await axios.post('http://localhost:3001/admin/login', { mobile, password });
+      const response = await axios.post('https://cms-136u.onrender.com/admin/login', { mobile, password });
       console.log(response);
       if (response.data.token) {
         Cookies.set('admintoken', response.data.token, { expires: 1 / 24 });

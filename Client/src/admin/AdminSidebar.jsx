@@ -46,7 +46,7 @@ const Sidebar = () => {
   const fetchUserData = async () => {
     try {
       const token = Cookies.get('token');
-      const response = await axios.get('http://localhost:3001/student/singlestudent', {
+      const response = await axios.get('https://cms-136u.onrender.com/student/singlestudent', {
         headers: {
           Authorization: `${token}`,
         }
